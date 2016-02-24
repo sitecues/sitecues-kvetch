@@ -3,9 +3,10 @@
 const config = require('./config.js'),
   report = {},
   viewModule = require('./views/' + config.view),
-  numUrlsRemaining = config.urls.length,
   STATUS_SUCCESSFULLY_LOADED = 'successfully loaded',
   STATUS_NOT_LOADED_YET = 'not loaded yet';
+
+let numUrlsRemaining = config.urls.length;
 
 function runTest(url, testName, contents, $) {
   const test = require('./tests/' + testName);
@@ -28,9 +29,7 @@ function runTests(url, contents) {
 
 function urlComplete() {
 
-  console.log('hi ' + numUrlsRemaining);
-  numUrlsRemaining = numUrlsRemaining - 1;
-  if (numUrlsRemaining === 0) {
+  if (-- numUrlsRemaining === 0) {
     showReport();
   }
   else {
@@ -42,6 +41,11 @@ function showReport() {
   console.log('\n\nReport:');
   viewModule(config, report);
 }
+
+// Crash and burn, die fast if a rejected promise is not caught.
+process.on('unhandledRejection', function (err) {
+    throw err;
+});
 
 // Run all tests for all files
 for (let url of config.urls) {
@@ -56,8 +60,8 @@ for (let url of config.urls) {
       runTests(url, response.body);
     })
     .catch(error => {
-      console.log(error.response.body);
-      report[url].status = 'Error: ' + error.response.body;
+      console.log(error);
+      report[url].status = 'Error: ' + error;
       urlComplete();
     });
 }
