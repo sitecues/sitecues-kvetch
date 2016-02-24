@@ -1,6 +1,6 @@
 # README #
 
-Run sanity tests against sitecues urls.
+Run sanity tests against sitecues urls. For example, check whether there is 1 script with data-provider="sitecues".
 
 ## Usage ##
 ```
@@ -10,7 +10,7 @@ Run sanity tests against sitecues urls.
 ## Options ##
 
 ### Choose tests ###
-* TESTS: comma-separated list of test names (leave empty to run all tests)
+* TESTS: comma-separated list of test names (leave empty to run all tests in the tests/ folder)
 
 ### Choose urls (use of one the following) ###
 * URLS: comma-separated list of urls to test
