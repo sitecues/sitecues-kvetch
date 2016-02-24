@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "URLFILE=all-sites.json VIEW=json OUTFILE=report.json npm start",
-    "start": "node start.js"
+    "start": "node bin/kvetch.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/aleventhal/sitecues-kvetch.git"
+    "url": "git@bitbucket.org:ai_squared/sitecues-kvetch.git"
   },
   "author": "Aaron Leventhal",
-  "license": "ISC",
+  "license": "SPDX",
   "homepage": "https://bitbucket.org/aleventhal/sitecues-kvetch#readme"
 }
