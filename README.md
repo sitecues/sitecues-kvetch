@@ -16,10 +16,10 @@ Run sanity tests against sitecues urls.
 
 ### Choose view type (default text) ###
 * VIEW:
- html (friendly html)
- csv (for import into spreadsheet)
- json
- text (best for console)
+** html (friendly html)
+** csv (for import into spreadsheet)
+** json
+** text (best for console)
 
 ### Choose output file name (default stdout) ###
 * OUTFILE
