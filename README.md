@@ -1,21 +1,31 @@
+# README #
+
 Run sanity tests against sitecues urls.
 
-Usage:
+## Usage ##
+```
 [options via environment variables] npm start
+```
 
-Choose tests:
-- TESTS: comma-separated list of test names (leave empty to run all tests)
+## Options ##
 
-Choose urls (use of one the following):
-- URLS: comma-separated list of urls to test
-- URLFILE: newline-separated list of urls to test
+### Choose tests ###
+* TESTS: comma-separated list of test names (leave empty to run all tests)
 
-Choose view type (default text):
-- VIEW:
-  - html (friendly html)
-  - csv (for import into spreadsheet)
-  - json
-  - text (best for console)
+### Choose urls (use of one the following) ###
+* URLS: comma-separated list of urls to test
+* URLFILE: newline-separated list of urls to test
 
-Choose output file name (default stdout)
-- OUTFILE
+### Choose view type (default text) ###
+* VIEW:
+
+    * html (friendly html)
+
+    * csv (for import into spreadsheet)
+
+    * json
+
+    * text (best for console)
+
+### Choose output file name (default stdout) ###
+* OUTFILE
