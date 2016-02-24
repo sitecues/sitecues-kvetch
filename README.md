@@ -3,7 +3,9 @@
 Run sanity tests against sitecues urls.
 
 ## Usage ##
+```
 [options via environment variables] npm start
+```
 
 ## Options ##
 
