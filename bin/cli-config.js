@@ -3,7 +3,7 @@
 const 
   config = {
     checks: process.env.CHECKS,
-    severity: process.env.SEVERITY,
+    minSeverity: process.env.MINSEVERITY,
     urls: process.env.URLS,
     urlFile: process.env.URLFILE,
     view: process.env.VIEW,

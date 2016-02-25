@@ -11,8 +11,8 @@ Run sanity tests against sitecues urls. For example, check whether there is 1 sc
 
 ### Choose checks ###
 * CHECKS: comma-separated list of check names (leave empty to run all checks in the lib/checks/ folder)
-* SEVERITY: minimum severity before showing a url -- will show all errors and warnings for that url as long as one of them meets the severity level.
-  SEVERE|MAJOR|NORMAL|MINOR|NONE (default is show every NONE)
+* MINSEVERITY: minimum severity before showing a url -- will show all errors and warnings for that url as long as one of them meets the severity level.
+  SEVERE|MAJOR|NORMAL|MINOR|NONE (default is show everything -- NONE)
 
 ### Choose urls (use of one the following) ###
 * URLS: comma-separated list of urls to test
