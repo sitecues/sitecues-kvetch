@@ -9,8 +9,10 @@ Run sanity tests against sitecues urls. For example, check whether there is 1 sc
 
 ## Options ##
 
-### Choose tests ###
-* CHECKS: comma-separated list of test names (leave empty to run all tests in the lib/checks/ folder)
+### Choose checks ###
+* CHECKS: comma-separated list of check names (leave empty to run all checks in the lib/checks/ folder)
+* SEVERITY: minimum severity before showing a url -- will show all errors and warnings for that url as long as one of them meets the severity level.
+  SEVERE|MAJOR|NORMAL|MINOR|NONE (default is show every NONE)
 
 ### Choose urls (use of one the following) ###
 * URLS: comma-separated list of urls to test
@@ -26,9 +28,6 @@ Run sanity tests against sitecues urls. For example, check whether there is 1 sc
     * json
 
     * text (best for console)
-
-### Display all results or errors only? ###
-* ERRORSONLY (true|false, default is true)
 
 ### Choose output file name (default stdout) ###
 * OUTFILE
