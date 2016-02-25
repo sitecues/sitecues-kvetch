@@ -27,7 +27,7 @@ Run sanity tests against sitecues urls. For example, check whether there is 1 sc
 
     * json
 
-    * text (best for console)
+    * text (default, best for console)
 
 ### Choose output file name (default stdout) ###
 * OUTFILE
