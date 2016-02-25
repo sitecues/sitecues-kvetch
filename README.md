@@ -10,14 +10,14 @@ Run sanity tests against sitecues urls. For example, check whether there is 1 sc
 ## Options ##
 
 ### Choose tests ###
-* TESTS: comma-separated list of test names (leave empty to run all tests in the tests/ folder)
+* CHECKS: comma-separated list of test names (leave empty to run all tests in the lib/checks/ folder)
 
 ### Choose urls (use of one the following) ###
 * URLS: comma-separated list of urls to test
 * URLFILE: newline-separated list of urls to test
 
 ### Choose view type (default text) ###
-* VIEW:
+* VIEW (matches the view classes in the lib/views/ folder):
 
     * html (friendly html)
 
