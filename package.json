@@ -13,5 +13,10 @@
   },
   "author": "Aaron Leventhal",
   "license": "SPDX",
-  "homepage": "https://bitbucket.org/aleventhal/sitecues-kvetch#readme"
+  "homepage": "https://bitbucket.org/aleventhal/sitecues-kvetch#readme",
+  "dependencies": {
+    "cheerio": "0.20.0",
+    "glob-fs": "0.1.6",
+    "got": "6.1.1"
+  }
 }
