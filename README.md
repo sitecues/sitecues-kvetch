@@ -27,5 +27,8 @@ Run sanity tests against sitecues urls. For example, check whether there is 1 sc
 
     * text (best for console)
 
+### Display all results or errors only? ###
+* ERRORSONLY (true|false, default is true)
+
 ### Choose output file name (default stdout) ###
 * OUTFILE

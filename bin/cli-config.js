@@ -21,6 +21,7 @@ const
     urls: process.env.URLS,
     urlFile: process.env.URLFILE,
     view: process.env.VIEW,
+    errorsOnly: process.env.ERRORSONLY === 'true',
     outFile: process.env.OUTFILE
   };
 
