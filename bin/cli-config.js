@@ -6,7 +6,7 @@ const
     minSeverity: process.env.MINSEVERITY,
     maxSeverity: process.env.MAXSEVERITY,
     urls: process.env.URLS,
-    urlFile: process.env.URLFILE,
+    urlSet: process.env.URLSET,
     view: process.env.VIEW,
     outFile: process.env.OUTFILE
   };

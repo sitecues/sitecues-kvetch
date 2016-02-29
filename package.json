@@ -4,7 +4,7 @@
   "description": "Sitecues implementation sanity checks",
   "main": "index.js",
   "scripts": {
-    "test": "URLFILE=all-sites.json VIEW=json OUTFILE=report.json npm start",
+    "test": "URLSET=all-sites.txt VIEW=json OUTFILE=report.json npm start",
     "start": "node bin/kvetch.js"
   },
   "repository": {
@@ -17,6 +17,7 @@
   "dependencies": {
     "cheerio": "0.20.0",
     "glob-fs": "0.1.6",
-    "got": "6.1.1"
+    "got": "6.1.1",
+    "hapi": "13.0.0"
   }
 }

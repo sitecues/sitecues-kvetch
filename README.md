@@ -18,7 +18,8 @@ Run sanity tests against sitecues urls. For example, check whether there is 1 sc
 
 ### Choose urls (use of one the following) ###
 * URLS: comma-separated list of urls to test
-* URLFILE: newline-separated list of urls to test
+* URLSET: all|classic or file with newline-separated list of urls to test.
+  Note: 'all' means all customer sites, and 'classic' is for sites in classic mode
 
 ### Choose view type (default text) ###
 * VIEW (matches the view classes in the lib/views/ folder):
