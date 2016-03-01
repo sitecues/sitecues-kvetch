@@ -2,9 +2,13 @@
 
 const Hapi = require('hapi'),
   server = new Hapi.Server(),
-  checker =require('../lib/checker.js');
+  checker =require('../lib/checker.js'),
+  serverOptions = {
+    port: parseInt(process.env.PORT, 10) || 3000,
+    routes: { cors: true }
+  };
 
-server.connection({ port: parseInt(process.env.PORT, 10) || 3000 });
+server.connection(serverOptions);
 
 server.route({
   method: 'GET',
@@ -15,7 +19,7 @@ server.route({
         checks: (request.query.checks || '').match(/[a-z,-]+/), // Only accept lowercase letters, comma, hyphen
         minSeverity: (request.query.minSeverity || '').match(/[A-Z]+/),
         maxSeverity: (request.query.maxSeverity || '').match(/[A-Z]+/),
-        urls: request.query.urls,
+        urls: request.query.urlSet ? '' : request.query.urls,  // Only use when not using urlSet
         urlSet: (request.query.urlSet || '').match(/[a-z]+/), // Only accept lowercase letters
         view: 'json'
       };
