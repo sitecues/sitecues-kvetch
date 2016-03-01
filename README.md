@@ -14,7 +14,7 @@ node bin/kvetch-cli [options]
 node bin/kvetch-cli --help
 
 # Example:
-node bin/kvetch-cli --checks=badge ==urls=http://eeoc.gov,acbohio.org --view=html
+node bin/kvetch-cli --checks=badge --urls=http://eeoc.gov,acbohio.org --view=html
 ```
 
 ## Web server ##
@@ -57,4 +57,3 @@ localhost:3000?checks=badge&urls=http://eeoc.gov,acbohio.org&view=json
     * json
 
     * text (default, best for console)
-
