@@ -57,3 +57,8 @@ localhost:3000?checks=badge&urls=http://eeoc.gov,acbohio.org&view=json
     * json
 
     * text (default, best for console)
+
+### View options ###
+* showAll=on|off (default = off)
+  Choose whether to include items in report when they have no errors
+

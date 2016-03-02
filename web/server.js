@@ -21,7 +21,8 @@ server.route({
         maxSeverity: (request.query.maxSeverity || '').match(/[A-Z]+/),
         urls: request.query.urlSet ? '' : request.query.urls,  // Only use when not using urlSet
         urlSet: (request.query.urlSet || '').match(/[a-z]+/), // Only accept lowercase letters
-        view: 'json'
+        view: 'json',
+        showAll: request.query.showAll
       };
     checker(config) // No need to catch errors for now -- just let exception through
       .then(function(rawReport) {

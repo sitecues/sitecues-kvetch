@@ -14,8 +14,10 @@ const
     .string('urls')
     .describe('urlSet', 'Name of file containing urls in the first column from data/ folder, e.g. classic|all (default = all)')
     .string('urlSet')
-    .describe('view', 'Name of view to use, e.g. text|json|html (default = json')
+    .describe('view', 'Name of view to use, e.g. text|json|html (default = json)')
     .string('view')
+    .describe('showAll', 'Show items that had no errors (default = off)')
+    .choices('showAll', ['on', 'off'])
     .help('h')
     .alias('h', 'help')
     .argv,
