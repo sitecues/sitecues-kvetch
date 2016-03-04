@@ -1,22 +1,15 @@
 http://millburnlibrary.org                   s-00e27714                                         
-http://goodwill.jobs                         s-013cb0c3                                         
-http://www.mtsac.edu/aces/                   s-390bdfa2                  SC-3418
-http://golina.pl                             s-041cf669                                         
-http://www.brzeziny-gmina.pl                 s-0796b61d                  no sitecues
 http://bip.wokiss.pl/wagrowiecm/             s-14949bfa                                         
 http://bip.wokiss.pl/koscianm                s-190630d2                                         
 http://www.rakoniewice.pl                    s-2e146908                                         
 http://bip.powiat-slupca.pl                  s-389f76da                                         
 http://www.gminakoscian.pl                   s-456e33ab                  sitecues broken
-http://leadingage.org                        s-4aa44e78                                         
 http://bip.wokiss.pl/kamieniec               s-4bfe60ab                                         
 http://www.windoweyesforoffice.com           s-542edffc                                         
 http://bip.wokiss.pl/przedecz                s-548f9948                                         
 http://ialvs.com                             s-570759e3
 http://gatfl.org                             s-6097a290                                         
 http://makingcareeasier.com                  s-620610ee                                         
-http://window-eyes.at                        s-b737790f                                         
-http://www.fullerton.edu/                    s-68a01ec7                                         
 http://adapadvocacyassociation.org           s-6fd0ef74                                         
 http://bip.kornik.pl                         s-73dd0fcf                                         
 http://ruhglobal.com                         s-742d6f96                  no sitecues
@@ -24,13 +17,10 @@ http://latan.org                             s-789901d0
 http://campabilitiessaratoga.org             s-79b6a3ce                                         
 http://tiicann.org                           s-7b90f601                                         
 http://pczarnkowg.wokiss.pl                  s-7d6bc776                                         
-http://www.virginialowvision.com             s-7f2e7ce1                                         
 http://perkins.org                           s-9afa6ab9                                         
 http://harpo.com.pl                          s-a5851e07                                         
 http://oxfordlanecapital.com                 s-acc8f046                                         
+http://window-eyes.at                        s-b737790f                                         
 http://www.texasat.net                       s-c27fa71d                                         
-http://nod.org                               s-d06c2938                                         
-http://myblindspot.org                       s-f266b384                                         
-http://mydigitalapex.com                     s-f2a9dde2                                         
 http://faast.org                             s-f424d83d                                         
 http://ticc.com                              s-f78268e1
