@@ -1,18 +1,19 @@
 {
   "name": "sitecues-kvetch",
   "version": "1.0.0",
-  "description": "Sitecues implementation sanity checks",
+  "description": "Validate sitecues client implementations",
   "main": "index.js",
+  "private" : true,
   "scripts": {
-    "test": "URLSET=all-sites.txt VIEW=json OUTFILE=report.json npm start",
-    "start": "node bin/kvetch.js"
+    "start": "node bin/kvetch.js",
+    "validate-sites": "URLSET=all-sites.txt VIEW=json OUTFILE=report.json npm start"
   },
   "repository": {
     "type": "git",
     "url": "git@bitbucket.org:ai_squared/sitecues-kvetch.git"
   },
   "author": "Aaron Leventhal",
-  "license": "SPDX",
+  "license": "UNLICENSED",
   "homepage": "https://bitbucket.org/aleventhal/sitecues-kvetch#readme",
   "dependencies": {
     "cheerio": "0.20.0",
