@@ -17,8 +17,8 @@
             "exec_mode" : "cluster",
             "instances" : 2,
             "max_memory_restart" : "120M",
-            "env_dev" : {
-                "PORT"     : "3000"
+            "env" : {
+                "PORT" : "3000"
             }
         },
     ],
@@ -28,13 +28,16 @@
         http://pm2.keymetrics.io/docs/usage/deployment/
     */
     "deploy" : {
-        "dev" : {
+        "production" : {
             "user" : "kvetch",
             "host" : "tools.qa.sitecues.com",
             "repo" : "git@bitbucket.org:ai_squared/sitecues-kvetch.git",
             "ref"  : "origin/master",
             "path" : "/srv/sitecues-kvetch",
-            "post-deploy" : "npm install && pm2 startOrReload ecosystem.json --env dev"
+            "post-deploy" : "npm install && pm2 startOrReload ecosystem.json --env production",
+            "env" : {
+                "NODE_ENV": "production"
+            }
         }
     }
 }
