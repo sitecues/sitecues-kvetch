@@ -1,0 +1,40 @@
+/*
+    This file defines the configuration for managing sitecues Kvetch as a
+    service with PM2.
+*/
+{
+    /*
+        Application settings.
+        http://pm2.keymetrics.io/docs/usage/application-declaration/
+    */
+    "apps" : [
+        /*
+            Kvetch, the client implementation validator.
+        */
+        {
+            "name"   : "sitecues-kvetch",
+            "script" : "bin/kvetch-server.js",
+            "exec_mode" : "cluster",
+            "instances" : 2,
+            "max_memory_restart" : "120M",
+            "env_dev" : {
+                "PORT"     : "3000"
+            }
+        },
+    ],
+
+    /*
+        Deployment settings.
+        http://pm2.keymetrics.io/docs/usage/deployment/
+    */
+    "deploy" : {
+        "dev" : {
+            "user" : "kvetch",
+            "host" : "tools.qa.sitecues.com",
+            "repo" : "git@bitbucket.org:ai_squared/sitecues-kvetch.git",
+            "ref"  : "origin/master",
+            "path" : "/srv/sitecues-kvetch",
+            "post-deploy" : "npm install && pm2 startOrReload ecosystem.json --env dev"
+        }
+    }
+}
