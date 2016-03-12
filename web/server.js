@@ -1,7 +1,8 @@
 'use strict';
 
-const Hapi = require('hapi'),
-  server = new Hapi.Server(),
+const
+  hapi = require('hapi'),
+  server = new hapi.Server(),
   checker =require('../lib/checker.js'),
   serverOptions = {
     port: parseInt(process.env.PORT, 10) || 3000,
@@ -14,7 +15,7 @@ server.route({
   method: 'GET',
   path: '/',
   handler: function (request, reply) {
-    const 
+    const
       config = {
         checks: (request.query.checks || '').match(/[a-z,-]+/), // Only accept lowercase letters, comma, hyphen
         minSeverity: (request.query.minSeverity || '').match(/[A-Z]+/),
