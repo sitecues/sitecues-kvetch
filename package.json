@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Validate sitecues client implementations",
   "main": "index.js",
-  "private" : true,
+  "private": true,
   "scripts": {
     "start": "node bin/kvetch.js",
     "validate-sites": "URLSET=all-sites.txt VIEW=json OUTFILE=report.json npm start"
@@ -21,5 +21,11 @@
     "got": "6.1.1",
     "hapi": "13.0.0",
     "yargs": "4.2.0"
+  },
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-jshint": "2.0.0",
+    "jshint": "2.9.1",
+    "jshint-stylish": "2.1.0"
   }
 }
