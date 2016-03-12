@@ -1,4 +1,11 @@
+#!/usr/bin/env node
+
 'use strict';
+
+// Crash and burn, die fast if a rejected promise is not caught.
+process.on('unhandledRejection', function (err) {
+    throw err;
+});
 
 const
   constants = require('../lib/constants'),
@@ -23,10 +30,10 @@ const
     .argv,
   checker = require('../lib/checker.js');
 
-checker(config) // No need to catch errors for now -- just let exception through
-  .then(function(rawReport) {
+checker(config)
+  .then(function (rawReport) {
     // TODO use winston library if we need more advanced logging
     console.log('\n\nWriting report ...');
     console.log(rawReport);
-    console.log('Finished'); 
+    console.log('Finished');
   });
