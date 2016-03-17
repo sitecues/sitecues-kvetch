@@ -29,7 +29,7 @@
     */
     "deploy" : {
         "production" : {
-            "user" : "kvetch",
+            "user" : "autouser",
             "host" : "tools.qa.sitecues.com",
             "repo" : "git@bitbucket.org:ai_squared/sitecues-kvetch.git",
             "ref"  : "origin/master",
