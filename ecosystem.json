@@ -34,7 +34,7 @@
             "repo" : "git@bitbucket.org:ai_squared/sitecues-kvetch.git",
             "ref"  : "origin/master",
             "path" : "/srv/sitecues-kvetch",
-            "post-deploy" : "npm install && pm2 startOrReload ecosystem.json --env production",
+            "post-deploy" : "npm install && pm2 startOrReload ecosystem.json production",
             "env" : {
                 "NODE_ENV": "production"
             }
