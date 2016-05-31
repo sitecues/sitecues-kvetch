@@ -9,6 +9,14 @@ const
     routes: { cors: true }
   };
 
+function getValidString(input, regex) {
+  if (!input) {
+    return '';
+  }
+  var output = input.match(regex);
+  return output ? output[0] : '';
+}
+
 server.connection(serverOptions);
 
 server.route({
@@ -17,11 +25,11 @@ server.route({
   handler: function (request, reply) {
     const
       config = {
-        checks: (request.query.checks || '').match(/[a-z,-]+/), // Only accept lowercase letters, comma, hyphen
-        minSeverity: (request.query.minSeverity || '').match(/[A-Z]+/),
-        maxSeverity: (request.query.maxSeverity || '').match(/[A-Z]+/),
+        checks: getValidString(request.query.checks, /[a-z,-]+/), // Only accept lowercase letters, comma, hyphen
+        minSeverity: getValidString(request.query.minSeverity, /[A-Z]+/),
+        maxSeverity: getValidString(request.query.maxSeverity, /[A-Z]+/),
         urls: request.query.urlSet ? '' : request.query.urls,  // Only use when not using urlSet
-        urlSet: (request.query.urlSet || '').match(/[a-z]+/), // Only accept lowercase letters
+        urlSet: getValidString(request.query.urlSet, /[a-z]+/), // Only accept lowercase letters
         view: 'json',
         showAll: request.query.showAll
       };
