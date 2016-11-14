@@ -5,7 +5,7 @@ const
   server = new hapi.Server(),
   checker =require('../lib/checker.js'),
   serverOptions = {
-    port: parseInt(process.env.PORT, 10) || 3000,
+    port: parseInt(process.env.PORT, 10) || 3123,
     routes: { cors: true }
   };
 

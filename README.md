@@ -18,7 +18,7 @@ node bin/kvetch-cli --checks=badge --urls=http://eeoc.gov,acbohio.org --view=htm
 ```
 
 ## Web server ##
-Default port is 3000, but can be set via PORT environment variable.
+Default port is 3123, but can be set via PORT environment variable.
 Do NOT prefix options with --
 ```
 # Launch server
